@@ -663,7 +663,7 @@ int main() {
 }*/
 
 ///Essai Diner des philosophes
-
+/*
 #include <iostream>
 #include <thread>
 #include <mutex>
@@ -708,7 +708,7 @@ void Eating(int fork1, int fork2, int turns, bool hungry) {
 		}
 		unique_lock<mutex> lk(philosophers[fork1]);
 		cond.wait(lk, [] {return passages >= 5; });
-		lk.unlock();*/
+		lk.unlock();
 		turns--;
 
 	}
@@ -731,4 +731,4 @@ int main() {
 
 	cout << "Nombre de fois qu'un philosophe a été affamé : " << hungryPhilosopher << endl;
 	return 0;
-}
+}*/
